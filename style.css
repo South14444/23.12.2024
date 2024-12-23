@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Ограничим ширину контейнера */
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center; /* Выравнивание заголовка по центру */
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%; /* Кнопка будет занимать всю ширину контейнера */
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px; /* Уменьшаем отступы для маленьких экранов */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Уменьшаем размер заголовка */
+    }
+
+    label {
+        font-size: 0.9em; /* Уменьшаем размер шрифта для меток */
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    textarea {
+        padding: 8px; /* Уменьшаем отступы для полей ввода */
+    }
+
+    button {
+        padding: 8px 15px; /* Уменьшаем отступы для кнопок */
+    }
+}

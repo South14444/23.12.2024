@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Форма регистрации</h2>
+        <form id="registrationForm">
+            <label for="username">Имя пользователя:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Подтверждение пароля:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <label for="birthdate">Дата рождения:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="gender">Пол:</label>
+            <input type="radio" id="male" name="gender" value="male" required> Мужчина
+            <input type="radio" id="female" name="gender" value="female" required> Женщина
+
+            <label for="subscribe">Подписка на новости:</label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+
+            <label for="message">Сообщение для администратора:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+</body>
+</html>
